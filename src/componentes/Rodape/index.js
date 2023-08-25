@@ -8,7 +8,7 @@ const Rodape = () => {
         <footer className="rodape">
             
             <div className='logos'>
-                <a href='https://github.com/Gilson-Souza' target="_blank"><img src='./imagens/git-hub.svg'></img></a>
+                <a href='https://github.com/Gilson-Souza/organo' target="_blank"><img src='./imagens/git-hub.svg'></img></a>
             </div>
 
             <div>
