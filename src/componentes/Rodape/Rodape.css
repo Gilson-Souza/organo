@@ -36,3 +36,12 @@
     gap: 16px;
 }
 
+@media (max-width: 640px){
+    .rodape p {
+        font-size: 12px;
+    }
+
+    .rodape p strong{
+        font-size: 12px;
+    }
+}

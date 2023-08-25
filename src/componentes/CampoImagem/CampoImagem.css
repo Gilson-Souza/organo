@@ -21,3 +21,12 @@
     gap: 4px;
 
 }
+
+@media (max-width: 640px){
+    .campo-imagem{
+        align-items: center;
+        justify-content: center;
+    }
+
+  
+}

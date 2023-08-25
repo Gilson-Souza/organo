@@ -17,3 +17,17 @@
     align-items: center;
 }
 
+
+@media (max-width: 640px){
+    
+    .formulario form{
+        width: 350px;
+        text-align: center;
+        align-items: center;
+        
+    }
+    
+}
+    
+
+

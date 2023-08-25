@@ -7,3 +7,11 @@
 .animacao img{
     width: 300px;
 }
+
+
+@media scren and (max-width: 1024px){
+    .animacao{
+        display: none;
+    }
+  
+}

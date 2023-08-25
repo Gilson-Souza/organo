@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Banner from './componentes/Banner/Banner';
 import Formulario from './componentes/Formulario';
 import ListaCampanha from './componentes/ListaCampanha';
@@ -13,17 +13,30 @@ function App() {
 
   const [campanhas, setCampanhas] = useState([])
 
+  const [isSmallScreen, setIsSmallScreen] = useState(window.matchMedia('(max-width: 940px)').matches);
+
   const aNovaCampanhaAdicionada = (campanha) => {
     setCampanhas([...campanhas, campanha])
   }
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 940px)');
+    const updateScreenSize = () => {
+      setIsSmallScreen(mediaQuery.matches);
+    };
+    mediaQuery.addListener(updateScreenSize);
+    return () => {
+      mediaQuery.removeListener(updateScreenSize);
+    };
+  }, []);
 
   return (
     <div className="App">
       <Banner/>
         <div className="container">
-          <Animacao gifPath="https://media.tenor.com/eIBXgrLR4ZwAAAAd/minecraft.gif"/>  
-          <Formulario lista={listas.map(lista => lista.nome)} aNovaCampanhaAdicionada={campanha => aNovaCampanhaAdicionada(campanha)}/>
-          <Animacao gifPath="https://media.tenor.com/K9ZazwjOMKYAAAAd/minecraft.gif"/>   
+        {!isSmallScreen && <Animacao gifPath="https://media.tenor.com/eIBXgrLR4ZwAAAAd/minecraft.gif" />}
+        <Formulario lista={listas.map(lista => lista.nome)} aNovaCampanhaAdicionada={campanha => aNovaCampanhaAdicionada(campanha)} />
+        {!isSmallScreen && <Animacao gifPath="https://media.tenor.com/K9ZazwjOMKYAAAAd/minecraft.gif" />}
         </div>
 
       {listas.map(lista => <ListaCampanha  
