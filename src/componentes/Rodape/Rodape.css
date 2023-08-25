@@ -1,0 +1,38 @@
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p3/2948768-pixel-minecraft-style-land-background-vetor.jpg');
+    background-color: #a02d2d;
+    background-size: contain; /* Dimensiona a imagem para caber dentro do elemento */
+    background-position: center; /* Centraliza a imagem horizontalmente */   
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+
+.rodape p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.rodape p strong{
+    color: #42ee03;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.rodape a img{
+    width: 45px;
+    height: 45px;
+    
+}
+
+.logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+}
+

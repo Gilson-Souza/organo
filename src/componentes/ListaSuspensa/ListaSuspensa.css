@@ -1,0 +1,22 @@
+.ListaSuspensa{
+    margin: 24px 0;
+}
+
+.ListaSuspensa label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.ListaSuspensa select{
+    background-color: #fff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    border: none;
+    Outline: none;
+    font-size: 24px;
+    padding: 24px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}

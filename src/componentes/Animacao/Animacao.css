@@ -1,0 +1,9 @@
+.animacao{
+    display: flex;
+    align-items: center;    
+  
+}
+
+.animacao img{
+    width: 300px;
+}

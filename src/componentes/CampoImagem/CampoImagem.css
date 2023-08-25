@@ -1,0 +1,23 @@
+.campo-imagem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    
+}
+
+.campo-imagem img{
+    width: 155px;
+    height: 75px;
+}
+
+.campo-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 180px;
+    height: 100px;
+    gap: 4px;
+
+}

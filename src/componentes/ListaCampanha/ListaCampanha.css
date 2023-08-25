@@ -1,0 +1,29 @@
+.lista-container{
+    background-color: #D9F7E9;
+    text-align: center;
+    min-height: 600px;     
+}
+
+
+.lista-campanha{
+    padding: 32px;      
+}
+
+.lista-campanha h3{
+    font-size: 32px;
+    border-bottom: 4px solid #57C278;
+    display: inline-block;
+    padding-bottom: 8px;
+    color: #e05c03;
+    font-weight: 700;
+}
+   
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+
