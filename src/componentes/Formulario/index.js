@@ -65,7 +65,7 @@ const Formulario = (props) => {
                 <CampoTexto 
                     obrigatorio={true} 
                     label="Nome da Campanha" 
-                    placeholder="Digite o seu nome"
+                    placeholder="Digite um nome"
                     valor={nome}
                     aoAlterado={valor=> setNome(valor)}
                 />
